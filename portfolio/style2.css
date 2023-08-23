@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 20px 10px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 1s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: white;
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(-90deg, #c49959 65%, #fff 35%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-left: 200px;
+  background: #c49959;
+  border-radius: 50%;
+  border: 25px solid #fff;
+}
+
+.home-image img {
+  position: relative;
+  max-width: 300px;
+  max-height: 400px;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.home-content {
+  max-width: 600px;
+  color: #fff;
+  text-align: right;
+}
+
+.home-content {
+  margin-right: 200px;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: 0.5px black;
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -410px 0;
+  animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText {
+  0%,
+  95%,
+  100% {
+    background-position: -410px 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+.home-content p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.home-sci {
+  margin: 25px 0 40px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #c49959;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.home-sci a:hover {
+  background: black;
+  color: #fff;
+  border-color: black;
+  box-shadow: 0 0 10px white;
+}
+
+.btn {
+  padding: 12px 35px;
+  background: black;
+  border-radius: 40px;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px black;
+  transition: 2s;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
